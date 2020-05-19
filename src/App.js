@@ -23,7 +23,7 @@ export default class App extends Component {
   }
 
   getProducts = () => {
-    fetch("http://localhost:8080/products")
+    fetch("https://fsystm.github.io/productAPI/products.json")
       .then((data) => data.json())
       .then((data) => this.setState({ products: data }));
   };
