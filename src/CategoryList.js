@@ -11,7 +11,7 @@ export default class CategoryList extends Component {
   }
 
   getCategories = () => {
-    fetch("https://fsystm.github.io/productAPI/categories.json")
+    fetch("http://fsystm.github.io/productAPI/categories.json")
       .then((response) => response.json())
       .then((data) => this.setState({ categories: data }));
   };
